@@ -85,17 +85,17 @@ PARÁGRAFO PRIMEIRO: Todos os desenhos serão apresentados em escalas para reali
 
 PARÁGRAFO SEGUNDO: Ao ser apresentada cada etapa do serviço, o CONTRATANTE assinará um Termo de Recebimento de projeto(s), reconhecendo a conclusão da etapa.
 
-2.5- ETAPA DE DETALHAMENTOS TÉCNICOS:
+2.5-ETAPA DE DETALHAMENTOS TÉCNICOS:
 
-2.5.1 ESTUDO CROMÁTICO: Apresentação de proposta para as cores e acabamentos das superfícies internas e externas, por meio de representação gráfica em 2D (planta baixa) e/ou memorial descritivo.
+2.5.1-ESTUDO CROMÁTICO: Apresentação de proposta para as cores e acabamentos das superfícies internas e externas, por meio de representação gráfica em 2D (planta baixa) e/ou memorial descritivo.
 
-2.5.2 PAGINAÇÃO DE PISOS E REVESTIMENTOS: Definição de tipologia, formato, modulação, paginação e indicação de juntas para os pisos e revestimentos das áreas internas e externas.
+2.5.2-PAGINAÇÃO DE PISOS E REVESTIMENTOS: Definição de tipologia, formato, modulação, paginação e indicação de juntas para os pisos e revestimentos das áreas internas e externas.
 
 PARÁGRAFO ÚNICO: Fica expressamente pactuado que esta etapa se restringe à especificação de padronagens e dimensões, não incluindo a escolha, cotação ou aquisição de marcas e modelos específicos de produtos, o que permanecerá a cargo do(a) CONTRATANTE.
 
-2.5.3 LAYOUT FUNCIONAL: Elaboração de memorial e/ou planta baixa com a disposição e dimensionamento dos equipamentos essenciais (eletrodomésticos, cubas, etc.), conforme as diretrizes do briefing. Não contempla o desenvolvimento de projeto de marcenaria ou de interiores.
+2.5.3-LAYOUT FUNCIONAL: Elaboração de memorial e/ou planta baixa com a disposição e dimensionamento dos equipamentos essenciais (eletrodomésticos, cubas, etc.), conforme as diretrizes do briefing. Não contempla o desenvolvimento de projeto de marcenaria ou de interiores.
 
-2.5.4 DETALHAMENTO DE BANHEIROS: Consiste na elaboração de:
+2.5.4-DETALHAMENTO DE BANHEIROS: Consiste na elaboração de:
 
 i. Proposta de paginação de pisos e revestimentos, nos termos do item 2.5.2;
 
@@ -103,33 +103,33 @@ ii. Especificação de louças e metais sanitários, conforme as diretrizes do b
 
 iii. Desenho técnico das bancadas, incluindo dimensões e indicações de materiais.
 
-2.5.5 DETALHAMENTO DE FORRO: Desenho técnico em 3D do forro (gesso ou outro material a ser definido), incluindo detalhamento de rebaixos, sancas, cortineiros e demais elementos pertinentes.
+2.5.5-DETALHAMENTO DE FORRO: Desenho técnico em 3D do forro (gesso ou outro material a ser definido), incluindo detalhamento de rebaixos, sancas, cortineiros e demais elementos pertinentes.
 
-2.5.6 PROJETO LUMINOTÉCNICO: Elaboração de planta com a locação dos pontos de iluminação (spots, pendentes, arandelas, etc.), com a especificação do tipo de lâmpada e efeito luminoso pretendido, em consonância com o projeto de forro e o layout dos ambientes.
+2.5.6-PROJETO LUMINOTÉCNICO: Elaboração de planta com a locação dos pontos de iluminação (spots, pendentes, arandelas, etc.), com a especificação do tipo de lâmpada e efeito luminoso pretendido, em consonância com o projeto de forro e o layout dos ambientes.
 
-2.5.7 DETALHAMENTO DE ESQUADRIAS E GUARDA-CORPOS: Desenho técnico e especificação de portas, janelas, peitoris e guarda-corpos, incluindo a elaboração de tabela de esquadrias com dimensões e observações para execução.
+2.5.7-DETALHAMENTO DE ESQUADRIAS E GUARDA-CORPOS: Desenho técnico e especificação de portas, janelas, peitoris e guarda-corpos, incluindo a elaboração de tabela de esquadrias com dimensões e observações para execução.
 
-2.5.8 DESENHO DO MURO FRONTAL: Elaboração de desenho técnico da fachada frontal do muro, incluindo portões de acesso de pedestres e veículos, em conformidade com o estilo arquitetônico do projeto principal.
+2.5.8-DESENHO DO MURO FRONTAL: Elaboração de desenho técnico da fachada frontal do muro, incluindo portões de acesso de pedestres e veículos, em conformidade com o estilo arquitetônico do projeto principal.
 
 2.6- DOS SERVIÇOS NÃO CONTEMPLADOS NO ESCOPO:
 
 Salvo se expressamente contratado em aditivo, não fazem parte do objeto deste contrato:
 
-2.6.1 A elaboração de projetos complementares, tais como: projeto estrutural (cálculo), projeto de fundações, instalações elétricas e hidrossanitárias, telefonia, dados, automação, ar-condicionado, entre outros.
+2.6.1-A elaboração de projetos complementares, tais como: projeto estrutural (cálculo), projeto de fundações, instalações elétricas e hidrossanitárias, telefonia, dados, automação, ar-condicionado, entre outros.
 
-2.6.2 A execução, gerenciamento ou fiscalização da obra.
+2.6.2-A execução, gerenciamento ou fiscalização da obra.
 
-2.6.3 O recolhimento de taxas, emolumentos e o pagamento das respectivas Anotações/Registros de Responsabilidade Técnica (ART/RRT) referentes aos projetos complementares e à execução da obra.
+2.6.3-O recolhimento de taxas, emolumentos e o pagamento das respectivas Anotações/Registros de Responsabilidade Técnica (ART/RRT) referentes aos projetos complementares e à execução da obra.
 
-2.6.4 Serviços de topografia, sondagem do solo ou quaisquer outros laudos técnicos preliminares.
+2.6.4-Serviços de topografia, sondagem do solo ou quaisquer outros laudos técnicos preliminares.
 
-2.6.5 O desenvolvimento de projeto de design de interiores, que inclui, mas não se limita a, projeto detalhado de marcenaria, curadoria de mobiliário, objetos de decoração e produção final de ambientes.
+2.6.5-O desenvolvimento de projeto de design de interiores, que inclui, mas não se limita a, projeto detalhado de marcenaria, curadoria de mobiliário, objetos de decoração e produção final de ambientes.
 
-2.7-Os prazos acima serão contados a partir da entrega dos elementos necessários ao desenvolvimento do projeto pelo CONTRATANTE, ou seja, plantas da construtora (se houver), normas do condomínio (se houver) e documentos Do CONTRATANTE para emissão da RRT (Registro de Responsabilidade Técnica de Projeto).
+2.7- Os prazos acima serão contados a partir da entrega dos elementos necessários ao desenvolvimento do projeto pelo CONTRATANTE, ou seja, plantas da construtora (se houver), normas do condomínio (se houver) e documentos Do CONTRATANTE para emissão da RRT (Registro de Responsabilidade Técnica de Projeto).
 
-2.8-Os prazos acima não se vinculam aos prazos necessários para aprovação junto aos órgãos competentes.
+2.8- Os prazos acima não se vinculam aos prazos necessários para aprovação junto aos órgãos competentes.
 
-2.9-Não serão contados os dias em que o projeto ficar retido pelo CONTRATANTE para apreciação.
+2.9- Não serão contados os dias em que o projeto ficar retido pelo CONTRATANTE para apreciação.
 
 3-CLÁUSULA TERCEIRA
 
