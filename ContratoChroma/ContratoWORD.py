@@ -15,18 +15,25 @@ verde = '#394731'
 cinza = '#d0cfcc'
 marrom = '#8f3c23'
 
-
-
 # Função para ler o template do contrato de um arquivo 
-def ler_template_contrato(): 
-    with open('template_contrato.txt', 'r', encoding='utf-8') as file: 
+def ler_template_contrato(template_filename): 
+    with open(f'ContratoChroma/{template_filename}', 'r', encoding='utf-8') as file: 
         template = file.read() 
     return template 
-# Carrega o template do contrato 
-template_contrato = ler_template_contrato()
 
 # Função para gerar o contrato
 def gerar_contrato(dados):
+
+    if service_var.get() == "Projeto de arquitetura":
+        template_var.set("template_contrato_arq.txt")
+    elif service_var.get() == "Projeto de arquitetura com acabamento":
+        template_var.set("template_contrato_arq_acabamento.txt")
+    elif service_var.get() == "Projeto de reforma":
+        template_var.set("template_contrato.txt")
+
+    # Carrega o template conforme seleção
+    template_contrato = ler_template_contrato(template_var.get())
+
     dia = 0; mes = 0; ano = 0
     d = dados['data_contrato']
     i = 0
@@ -87,6 +94,8 @@ def gerar_contrato(dados):
         mes_contrato=mes,
         ano_contrato=ano,
     )
+
+
     return contrato
 
 # Função para coletar os dados da interface gráfica
@@ -221,7 +230,7 @@ def exibir_contrato(contrato):
 
 
 # Variável global para o caminho da logomarca
-logomarca_path = "Logotipo_Chroma.png"
+logomarca_path = "ContratoChroma/Logotipo_Chroma.png"
 
 # # Mostra a Logomarca
 # root = tk.Tk()
@@ -247,6 +256,19 @@ estilo_fonte_var = tk.StringVar(value="normal")
 tamanho_fonte_var = tk.IntVar(value=11)
 root.title("Gerador de Contratos")
 root.config(bg=cinza)
+
+
+# Variáveis para seleção do template
+template_var = tk.StringVar(value="")
+service_var = tk.StringVar(value="Selecione o tipo de serviço")
+
+# Adicione a barra de seleção de template na interface
+tk.Label(root, text="Tipo de Serviço:", bg=cinza, font=(fonte_var.get(), tamanho_fonte_var.get(), estilo_fonte_var.get())).grid(row=12, column=2)
+tk.OptionMenu(root, service_var, "Projeto de arquitetura", "Projeto de arquitetura com acabamento", "Projeto de reforma").grid(row=12, column=3)
+option_menu_template = tk.OptionMenu(root, service_var, "Projeto de arquitetura", "Projeto de arquitetura com acabamento", "Projeto de reforma")
+option_menu_template.config(bg=cinza, font=(fonte_var.get(), tamanho_fonte_var.get(), estilo_fonte_var.get()))
+
+
 
 tk.Label(root, text="Nome do Cliente:",bg=cinza,font=(fonte_var.get(), tamanho_fonte_var.get(), estilo_fonte_var.get())).grid(row=0, column=0)
 entry_nome_cliente = tk.Entry(root,bg=cinza)
@@ -359,18 +381,19 @@ botao_contrato.config(font=(fonte_var.get(), tamanho_fonte_var.get(), estilo_fon
 # label_logomarca.config(text=f"Logomarca Carregada: {logomarca_path}")
 
 # Abrir imagem da logo e redimensionar
-with Image.open('Logotipo_Chroma.png') as img:
+with Image.open(logomarca_path) as img:
     width, height = img.size
     width = int(width*0.2)
     height = int(height*0.2)
     resized_image = img.resize((width,height))
 
 # Criar um widget Label para exibir a imagem da logo
-image = Image.open('Logotipo_Chroma.png')
+image = Image.open(logomarca_path)
 photo = ImageTk.PhotoImage(resized_image)
 label = tk.Label(root, image=photo)
 label.config(justify="left",bg=cinza)
 tk.Label(root, image=photo,bg=cinza).grid(row=15, column=0)
+
 
 
 root.mainloop()
