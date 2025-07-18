@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox, font, filedialog
-from reportlab.lib.pagesizes import letter
+from reportlab.lib.pagesizes import letter, A4
 from reportlab.pdfgen import canvas
 from docx import Document
 from docx.shared import Pt, Inches 
@@ -30,6 +30,8 @@ def gerar_contrato(dados):
         template_var.set("template_contrato_arq_acabamento.txt")
     elif service_var.get() == "Projeto de reforma":
         template_var.set("template_contrato.txt")
+    elif service_var.get() == "Selecione o tipo de serviço":
+        messagebox.showinfo("Tipo de serviço não selecionado","Por favor, selecione um tipo de serviço antes de gerar o contrato.")
 
     # Carrega o template conforme seleção
     template_contrato = ler_template_contrato(template_var.get())
@@ -90,6 +92,7 @@ def gerar_contrato(dados):
         cidade_imovel=dados['cidade_imovel'],
         valor_servico=dados['valor_servico'],
         forma_pagamento=dados['forma_pagamento'],
+        tipo_construcao=dados['tipo_construcao'],
         dia_contrato=dia,
         mes_contrato=mes,
         ano_contrato=ano,
@@ -116,7 +119,8 @@ def coletar_dados():
         'cidade_imovel': entry_cidade_imovel.get(),
         'valor_servico': entry_valor_servico.get(),
         'forma_pagamento': entry_forma_pagamento.get("1.0", tk.END).strip(),
-        'data_contrato': entry_data_contrato.get()
+        'data_contrato': entry_data_contrato.get(),
+        'tipo_construcao': entry_tipo_construcao.get(),
     }
         
     contrato = gerar_contrato(dados)
@@ -131,20 +135,20 @@ def exibir_contrato(contrato):
     texto_contrato.insert('1.0', contrato)
     texto_contrato.pack(expand=True, fill='both')
     
-    def salvar_pdf():
-        arquivo_pdf = filedialog.asksaveasfilename(defaultextension=".pdf", filetypes=[("PDF files", "*.pdf")])
-        if arquivo_pdf:
-            c = canvas.Canvas(arquivo_pdf, pagesize=letter)
-            largura, altura = letter
+    # def salvar_pdf():
+    #     arquivo_pdf = filedialog.asksaveasfilename(defaultextension=".pdf", filetypes=[("PDF files", "*.pdf")])
+    #     if arquivo_pdf:
+    #         c = canvas.Canvas(arquivo_pdf, pagesize=A4)
+    #         largura, altura = A4
 
-            # Adicionar logomarca
-            if logomarca_path:
-                c.drawImage(logomarca_path, 50, altura - 100, width=100, height=50)
+    #         # Adicionar logomarca
+    #         if logomarca_path:
+    #             c.drawImage(logomarca_path, 50, altura - 100, width=100, height=50)
 
-            # Adicionar texto do contrato
-            c.drawString(50, altura - 150, contrato)
-            c.save()
-            messagebox.showinfo("Salvo em PDF", f"Contrato salvo como {arquivo_pdf}")
+    #         # Adicionar texto do contrato
+    #         c.drawString(50, altura - 150, contrato)
+    #         c.save()
+    #         messagebox.showinfo("Salvo em PDF", f"Contrato salvo como {arquivo_pdf}")
     
     def salvar_docx(): 
         arquivo_docx = filedialog.asksaveasfilename(defaultextension=".docx", filetypes=[("Word files", "*.docx")]) 
@@ -215,8 +219,8 @@ def exibir_contrato(contrato):
         doc.save(arquivo_docx) 
         messagebox.showinfo("Salvo em DOCX", f"Contrato salvo como {arquivo_docx}")
     
-    botao_salvar_pdf = tk.Button(janela_contrato, text="Salvar como PDF", command=salvar_pdf)
-    botao_salvar_pdf.pack(pady=10)
+    # botao_salvar_pdf = tk.Button(janela_contrato, text="Salvar como PDF", command=salvar_pdf)
+    # botao_salvar_pdf.pack(pady=10)
 
     botao_salvar_docx = tk.Button(janela_contrato, text="Salvar como DOCX", command=salvar_docx)
     botao_salvar_docx.pack(pady=10)
@@ -268,37 +272,48 @@ tk.OptionMenu(root, service_var, "Projeto de arquitetura", "Projeto de arquitetu
 option_menu_template = tk.OptionMenu(root, service_var, "Projeto de arquitetura", "Projeto de arquitetura com acabamento", "Projeto de reforma")
 option_menu_template.config(bg=cinza, font=(fonte_var.get(), tamanho_fonte_var.get(), estilo_fonte_var.get()))
 
+tk.Label(root, text="Tipo de Construção:",bg=cinza,font=(fonte_var.get(), tamanho_fonte_var.get(), estilo_fonte_var.get())).grid(row=0, column=0)
+entry_tipo_construcao = tk.Entry(root,bg=cinza,font=(fonte_var.get(), tamanho_fonte_var.get(), estilo_fonte_var.get()))
+entry_tipo_construcao.grid(row=0, column=1)
+entry_tipo_construcao.config(width=50,font=(fonte_var.get(), tamanho_fonte_var.get(), estilo_fonte_var.get()))
 
-
-tk.Label(root, text="Nome do Cliente:",bg=cinza,font=(fonte_var.get(), tamanho_fonte_var.get(), estilo_fonte_var.get())).grid(row=0, column=0)
+# Entrada de dados -> coluna 1
+tk.Label(root, text="Nome do Cliente:",bg=cinza,font=(fonte_var.get(), tamanho_fonte_var.get(), estilo_fonte_var.get())).grid(row=1, column=0)
 entry_nome_cliente = tk.Entry(root,bg=cinza)
-entry_nome_cliente.grid(row=0, column=1)
+entry_nome_cliente.grid(row=1, column=1)
 entry_nome_cliente.config(width=50,justify="left",font=(fonte_var.get(), tamanho_fonte_var.get(), estilo_fonte_var.get()))
 
-tk.Label(root, text="Endereço do Cliente:",bg=cinza,font=(fonte_var.get(), tamanho_fonte_var.get(), estilo_fonte_var.get())).grid(row=1, column=0)
+tk.Label(root, text="Endereço do Cliente:",bg=cinza,font=(fonte_var.get(), tamanho_fonte_var.get(), estilo_fonte_var.get())).grid(row=2, column=0)
 entry_endereco_cliente = tk.Entry(root,bg=cinza)
-entry_endereco_cliente.grid(row=1, column=1)
+entry_endereco_cliente.grid(row=2, column=1)
 entry_endereco_cliente.config(width=50,font=(fonte_var.get(), tamanho_fonte_var.get(), estilo_fonte_var.get()))
 
-tk.Label(root, text="RG do Cliente:",bg=cinza,font=(fonte_var.get(), tamanho_fonte_var.get(), estilo_fonte_var.get())).grid(row=2, column=0)
+tk.Label(root, text="RG do Cliente:",bg=cinza,font=(fonte_var.get(), tamanho_fonte_var.get(), estilo_fonte_var.get())).grid(row=3, column=0)
 entry_rg_cliente = tk.Entry(root,bg=cinza)
-entry_rg_cliente.grid(row=2, column=1)
+entry_rg_cliente.grid(row=3, column=1)
 entry_rg_cliente.config(width=50,font=(fonte_var.get(), tamanho_fonte_var.get(), estilo_fonte_var.get()))
 
-tk.Label(root, text="CPF Cliente:",bg=cinza,font=(fonte_var.get(), tamanho_fonte_var.get(), estilo_fonte_var.get())).grid(row=3, column=0)
+tk.Label(root, text="CPF Cliente:",bg=cinza,font=(fonte_var.get(), tamanho_fonte_var.get(), estilo_fonte_var.get())).grid(row=4, column=0)
 entry_cpf_cliente = tk.Entry(root,bg=cinza)
-entry_cpf_cliente.grid(row=3, column=1)
+entry_cpf_cliente.grid(row=4, column=1)
 entry_cpf_cliente.config(width=50,font=(fonte_var.get(), tamanho_fonte_var.get(), estilo_fonte_var.get()))
 
-tk.Label(root, text="Telefone do Cliente:",bg=cinza,font=(fonte_var.get(), tamanho_fonte_var.get(), estilo_fonte_var.get())).grid(row=4, column=0)
+tk.Label(root, text="Telefone do Cliente:",bg=cinza,font=(fonte_var.get(), tamanho_fonte_var.get(), estilo_fonte_var.get())).grid(row=5, column=0)
 entry_telefone_cliente = tk.Entry(root,bg=cinza)
-entry_telefone_cliente.grid(row=4, column=1)
+entry_telefone_cliente.grid(row=5, column=1)
 entry_telefone_cliente.config(width=50,font=(fonte_var.get(), tamanho_fonte_var.get(), estilo_fonte_var.get()))
 
-tk.LabelFrame(root, text="e-mail do Cliente:",bg=cinza,font=(fonte_var.get(), tamanho_fonte_var.get(), estilo_fonte_var.get())).grid(row=5, column=0)
+tk.LabelFrame(root, text="e-mail do Cliente:",bg=cinza,font=(fonte_var.get(), tamanho_fonte_var.get(), estilo_fonte_var.get())).grid(row=6, column=0)
 entry_email_cliente = tk.Entry(root,bg=cinza)
-entry_email_cliente.grid(row=5, column=1)
+entry_email_cliente.grid(row=6, column=1)
 entry_email_cliente.config(width=50,font=(fonte_var.get(), tamanho_fonte_var.get(), estilo_fonte_var.get()))
+
+tk.Label(root, text="Descrição do Serviço:",bg=cinza,font=(fonte_var.get(), tamanho_fonte_var.get(), estilo_fonte_var.get())).grid(row=7, column=0)
+entry_descricao_servico = tk.Text(root,bg=cinza)
+entry_descricao_servico.grid(row=7, column=1, rowspan=6)
+entry_descricao_servico.config(width=50, height=20,font=(fonte_var.get(), tamanho_fonte_var.get(), estilo_fonte_var.get()))
+
+# Entrada de dados -> coluna 3
 
 tk.Label(root, text="Área do Protjeto:",bg=cinza,font=(fonte_var.get(), tamanho_fonte_var.get(), estilo_fonte_var.get())).grid(row=0, column=2)
 entry_area_projeto = tk.Entry(root,bg=cinza,font=(fonte_var.get(), tamanho_fonte_var.get(), estilo_fonte_var.get()))
@@ -329,14 +344,6 @@ tk.Label(root, text="Cidade do Imóvel:",bg=cinza,font=(fonte_var.get(), tamanho
 entry_cidade_imovel = tk.Entry(root,bg=cinza,font=(fonte_var.get(), tamanho_fonte_var.get(), estilo_fonte_var.get()))
 entry_cidade_imovel.grid(row=5, column=3)
 entry_cidade_imovel.config(width=50,font=(fonte_var.get(), tamanho_fonte_var.get(), estilo_fonte_var.get()))
-
-
-tk.Label(root, text="Descrição do Serviço:",bg=cinza,font=(fonte_var.get(), tamanho_fonte_var.get(), estilo_fonte_var.get())).grid(row=6, column=0)
-entry_descricao_servico = tk.Text(root,bg=cinza)
-entry_descricao_servico.grid(row=6, column=1, rowspan=6)
-entry_descricao_servico.config(width=50, height=20,font=(fonte_var.get(), tamanho_fonte_var.get(), estilo_fonte_var.get()))
-
-
 
 tk.Label(root, text="Valor do Serviço:",bg=cinza,font=(fonte_var.get(), tamanho_fonte_var.get(), estilo_fonte_var.get())).grid(row=6, column=2)
 entry_valor_servico = tk.Entry(root,bg=cinza,font=(fonte_var.get(), tamanho_fonte_var.get(), estilo_fonte_var.get()))
