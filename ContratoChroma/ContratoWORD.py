@@ -1,3 +1,29 @@
+# =============================================================================
+# ContratoWORD.py
+# =============================================================================
+# Sistema de geração automática de contratos personalizados para serviços de arquitetura.
+# 
+# Este programa utiliza interface gráfica (Tkinter) para entrada dos dados do cliente,
+# imóvel, serviço e condições contratuais, permitindo a seleção do tipo de serviço
+# (projeto de arquitetura, projeto com acabamento, reforma) e gerando o contrato
+# conforme o template correspondente.
+#
+# Funcionalidades principais:
+# - Interface gráfica para preenchimento dos dados do contrato
+# - Seleção dinâmica do template conforme o tipo de serviço
+# - Visualização do contrato gerado
+# - Exportação do contrato para arquivos DOCX (Word)
+# - Suporte à personalização de fonte, tamanho e estilo
+# - Inclusão automática de logomarca
+#
+# Requisitos:
+# - Python 3.x
+# - Bibliotecas: tkinter, reportlab, python-docx, Pillow
+#
+# Autor: Vinicius (adaptado para Chroma Arquitetura)
+# Data: 18 de julho de
+
+
 import tkinter as tk
 from tkinter import messagebox, font, filedialog
 from reportlab.lib.pagesizes import letter, A4

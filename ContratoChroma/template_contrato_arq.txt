@@ -1,5 +1,5 @@
 
-CONTRATO: PROJETO ARQUITETÔNICO
+CONTRATO: PROJETO ARQUITETÔNICO COM DEFINIÇÃO DE ACABAMENTO
 _____________________________________________________________________________                                              
 
 
@@ -26,7 +26,7 @@ _____________________________________________________________________________
 1-CLÁUSULA PRIMEIRA
 DO OBJETO:
 
-Prestação de serviços técnicos profissionais de arquitetura para elaboração de Projeto Arquitetônico de {tipo_construcao}, incluindo etapas desde o levantamento inicial até o projeto executivo, para o imóvel definido a seguir:
+Prestação de serviços técnicos profissionais de arquitetura para elaboração de Projeto Arquitetônico com definição de acabamento de {tipo_construcao}, incluindo etapas desde o levantamento inicial até o projeto executivo, para o imóvel definido a seguir:
 
 DADOS DO IMOVEL:
 Rua: {endereco_imovel}
@@ -37,7 +37,7 @@ Cidade: {cidade_imovel}
 Área de construção estimada: {area_projeto}m2
 
 
-1.1-A prestação de serviço da CONTRATADA para Projeto Arquitetônico de {tipo_construcao} contempla:
+1.1-A prestação de serviço da CONTRATADA para Projeto Arquitetônico com definição de acabamento de {tipo_construcao} contempla:
 {descricao_servico}
 
 2-CLÁUSULA SEGUNDA 
@@ -83,21 +83,61 @@ PRAZO: O PROJETO EXECUTIVO será entregue em até 30 dias úteis após a finaliz
 2.7.2- Os prazos acima não se vinculam aos prazos necessários para aprovação junto aos órgãos competentes.
 2.7.3- Será entregue ao CONTRATANTE um (01) conjunto de cópias impressas dos desenhos do Projeto Executivo acima mencionado e RRT (Registro de Responsabilidade Técnica) referente à autoria de projeto.
 
-2.8- Não serão contados os dias em que o projeto ficar retido pelo CONTRATANTE para apreciação.
 
-2.9- Os prazos estipulados neste instrumento poderão ser prorrogados ou ajustados em decorrência de imprevistos de natureza técnica ou legal que impossibilitem ou dificultem o cumprimento das obrigações assumidas pelas partes. Tais imprevistos deverão ser devidamente justificados e comunicados por escrito à outra parte, no prazo máximo de 7 dias úteis a contar da data em que forem identificados, acompanhados de documentação comprobatória, se aplicável. A prorrogação ou ajuste dos prazos dependerá de comum acordo entre as partes, formalizado por meio de aditivo contratual ou outro instrumento equivalente.
+
+2.8-ETAPA DE DEFINIÇÃO DOS ACABAMENTOS:
+
+2.8.1-ESTUDO DE MATERIALIDADE DO PROJETO: Apresentação de proposta para as cores, materiais e acabamentos das superfícies internas e externas, por meio de representação gráfica e/ou memorial descritivo.
+
+2.8.2-PAGINAÇÃO DE PISOS E REVESTIMENTOS: Definição de tipologia, formato, modulação, paginação e indicação de juntas para os pisos e revestimentos das áreas internas e externas.
+
+PARÁGRAFO PRIMEIRO: Fica expressamente pactuado que esta etapa se restringe à especificação de padronagens e dimensões, incluindo a escolha, mas não a cotação ou aquisição de produtos, o que permanecerá a cargo do(a) CONTRATANTE.
+
+PARÁGRAFO SEGUNDO: A alteração da dimensão dos pisos, após a conclusão dessa etapa, acarreta em custos adicionais relativos à necessidade de readequação do projeto.
+
+2.8.3-LAYOUT FUNCIONAL: Elaboração de memorial e/ou planta baixa com a disposição e dimensionamento dos equipamentos essenciais como eletrodomésticos, louças, metais, cubas, entre outros, conforme as diretrizes do briefing. Entretanto, não contempla o desenvolvimento de projeto de marcenaria ou de interiores.
+
+2.8.4-DETALHAMENTO DE BANHEIROS: Consiste na elaboração de desenho técnico das bancadas, incluindo dimensões e indicações de materiais.
+
+2.8.5-DETALHAMENTO DE FORRO: Desenho técnico em 2D do forro (gesso ou outro material a ser definido), incluindo detalhamento de rebaixos, sancas, cortineiros e demais elementos pertinentes.
+
+2.8.6-PROJETO LUMINOTÉCNICO: Elaboração de planta com a locação dos pontos de iluminação (spots, pendentes, arandelas, etc.), com a especificação do tipo de lâmpada e efeito luminoso pretendido, em consonância com o projeto de forro e o layout dos ambientes.
+
+2.8.7-DEFINIÇÃO DE ESQUADRIAS E GUARDA-CORPOS: Desenho técnico e especificação de portas, janelas, peitoris e guarda-corpos, incluindo a elaboração de tabela de esquadrias com dimensões e observações para execução.
+
+2.8.8-DESENHO DO MURO FRONTAL: Elaboração de desenho técnico da fachada frontal do muro, incluindo portões de acesso de pedestres e veículos, em conformidade com o estilo arquitetônico do projeto principal.
+
+2.9- DOS SERVIÇOS NÃO CONTEMPLADOS NO ESCOPO:
+
+Salvo se expressamente contratado em aditivo, não fazem parte do objeto deste contrato:
+
+2.9.1-A elaboração de projetos complementares, tais como: projeto estrutural (cálculo), projeto de fundações, instalações elétricas e hidrossanitárias, telefonia, dados, automação, ar-condicionado, entre outros.
+
+2.9.2-A execução, gerenciamento ou fiscalização da obra.
+
+2.9.3-O recolhimento de taxas, emolumentos e o pagamento das respectivas Anotações/Registros de Responsabilidade Técnica (ART/RRT) referentes aos projetos complementares e à execução da obra.
+
+2.9.4-Serviços de topografia, sondagem do solo ou quaisquer outros laudos técnicos preliminares.
+
+2.9.5-O desenvolvimento de projeto de design de interiores, que inclui, mas não se limita a, projeto detalhado de marcenaria, curadoria de mobiliário, objetos de decoração e produção final de ambientes.
+
+2.10- Não serão contados os dias em que o projeto ficar retido pelo CONTRATANTE para apreciação.
+
+2.11- Os prazos estipulados neste instrumento poderão ser prorrogados ou ajustados em decorrência de imprevistos de natureza técnica ou legal que impossibilitem ou dificultem o cumprimento das obrigações assumidas pelas partes. Tais imprevistos deverão ser devidamente justificados e comunicados por escrito à outra parte, no prazo máximo de 7 dias úteis a contar da data em que forem identificados, acompanhados de documentação comprobatória, se aplicável. A prorrogação ou ajuste dos prazos dependerá de comum acordo entre as partes, formalizado por meio de aditivo contratual ou outro instrumento equivalente.
 
 3- CLÁUSULA TERCEIRA
 
 DAS VISITAS TÉCNICAS E SERVIÇOS ADICIONAIS
 
-3.1- A CONTRATADA realizará 4 (quatro) visitas técnicas do projeto desenvolvido para conferência da execução da obra nas seguintes etapas: i) conferência da implantação do projeto;
-ii) conferência dos eixos das paredes, portas e janelas; iii) visita para tirar dúvidas da equipe de construção; iv) visita para tirar dúvidas de fornecedores;
+3.1- A CONTRATADA realizará 4 (quatro) visitas técnicas do projeto desenvolvido para conferência da execução da obra nas seguintes etapas: a) conferência da implantação do projeto;
+b) conferência dos eixos das paredes, portas e janelas; c) 1 (uma) visita para tirar dúvidas da equipe de construção; d) 1 (uma) visita para tirar dúvidas de fornecedores;
 
 
 3.2- A responsabilidade da CONTRATADA não se estende ao acompanhamento da execução da obra, a contratação de serviços e profissionais necessários à execução dos projetos, nem a compra de materiais necessários e tampouco os pagamentos dos materiais adquiridos e/ou dos serviços e profissionais contratados para execução da obra.
 
-3.1.3- As visitas inclusas nesse contrato serão válidas durante o prazo máximo de 24 meses contados a partir da data de assinatura desse contrato.
+3.3- As visitas inclusas nesse contrato serão válidas durante o prazo máximo de 24 meses contados a partir da data de assinatura desse contrato.
+
+3.4- No caso de construções fora da cidade de Arapongas-PR, será acrescido custo adicional com valor calculado conforme a distância do local da construção em relação à cidade de Arapongas.
 
 4- CLÁUSULA QUARTA
 
@@ -119,7 +159,7 @@ DAS OBRIGAÇÕES DO CONTRATANTE:
 
 5.1.2- Cabe ao CONTRATANTE atender todas as dúvidas do CONTRATADO durante o processo de projeto.
 
-5.1.3- O CONTRATANTE fica obrigado a executar a obra respeitando integralmente o Projeto de Design de interiores.
+5.1.3- O CONTRATANTE fica obrigado a executar a obra respeitando integralmente o Projeto de Arquitetura com definição de acabamento.
 
 5.1.4- Havendo necessidade de alteração do projeto antes e durante a execução da obra, a CONTRATADA, autora do projeto deverá ser notificada pela CONTRATANTE para avaliar as implicações das novas alterações e propor mudanças, se necessário, como manda o art. Da Resolução 67/2013 CAU/BR sob pena legais relativas aos direitos autorais (Lei Federal 12.378/2010)
 
@@ -129,7 +169,8 @@ DAS OBRIGAÇÕES DO CONTRATANTE:
 
 DOS HONORÁRIOS:
 
-6.1- Fica acordado entre as partes o valor deste contrato em R${valor_servico},00, para o desenvolvimento do Projeto de arquitetura de Interiores
+6.1- Fica acordado entre as partes o valor deste contrato em R${valor_servico},00, para o desenvolvimento do Projeto de Arquitetura com definição de acabamento.
+
 
 7- CLÁUSULA SÉTIMA
 
@@ -141,17 +182,17 @@ DA FORMA DE PAGAMENTO:
 7.1.1- Os pagamentos de transferência bancária deverão ser realizados na conta do CONTRATADO abaixo:
 
 BANCO: Santander
-AGÊNCIA:3030
-CONTA CORRENTE: 13.003353–0
-NOME:CHROMA ARQUITETURA E DESIGN LTDA.
-CNPJ:56.049.199/0001–05(Chave pix)
+AGÊNCIA: 3030
+CONTA CORRENTE: 13.003353-0
+NOME: CHROMA ARQUITETURA E DESIGN LTDA.
+CNPJ: 56.049.199/0001–05(Chave pix)
 
 7.1.2-Ao optar por pagamento em cheque, o CONTRATANTE deverá disponibilizá–los pré–datados na assinatura do contrato.
 
 71.3-Ao optar por BOLETOS, esses serão enviados pelo CONTRATADO por e–mail ou WhatsApp, com 10 dias de antecedência do vencimento ao CONTRATANTE.
 7.2-O atraso em qualquer uma das parcelas gera multa de 2% + correção de 2% ao mês sobre o saldo devido.
 
-7.3- Ocorrendo atraso do pagamento superior a 30 dias, a CONTRATADA poderá efetuar o nome do CONTRATANTE no cadastro de serviços de proteção ao crédito-SPC, consoante autorização da legislação vigente, bem como efetuar
+7.3- Ocorrendo atraso do pagamento superior a 30 dias, a CONTRATADA poderá efetuar o nome do CONTRATANTE no cadastro de serviços de proteção ao crédito SPC, consoante autorização da legislação vigente, bem como efetuar
 cobrança judicial e extrajudicial da parcela em aberto.
 
 8-CLÁUSULA OITAVA
@@ -164,7 +205,7 @@ DOS SERVIÇOS NÃO INCLUSOS
 
 8.1.2- Disponibilização de arquivos editáveis do projeto (Revit, AutoCAD, SketchUp, Lumion entre outros).
 
-8.1.3- Projetos Estruturais e Complementares relacionados à Engenharia e Paisagismo (ar–condicionado, elétrica, automação, som, telefonia, cabeamento, acústica bombeiros e demais não listados).
+8.1.3- Projetos Estruturais e Complementares relacionados à Engenharia e Paisagismo (ar-condicionado, elétrica, automação, som, telefonia, cabeamento, acústica bombeiros e demais não listados).
 
 8.1.4- Responsabilidade Técnica de Execução, Acompanhamento ou Administração de obra.
 
@@ -215,7 +256,7 @@ DAS CONSIDERAÇÕES FINAIS:
 
 10.3- Este projeto não poderá ser reproduzido em outro ambiente sem a autorização do autor do projeto que é a CONTRATADA, portadora dos direitos autorais.
 
-10.4- O projeto de design de interiores, objeto deste termo somente poderá ser utilizado para o fim e o local indicados nos documentos e desenhos apresentados.
+10.4- O projeto de arquitetura com definição de acabamento, objeto deste termo somente poderá ser utilizado para o fim e o local indicados nos documentos e desenhos apresentados.
 
 10.5- Os atendimentos a serem realizados pelo CONTRATADO ao CONTRATANTE serão exclusivamente durante o horário comercial, compreendido das 8 às 18hs, de segunda a sexta–feira em dias úteis.
 
@@ -225,7 +266,7 @@ DAS CONSIDERAÇÕES FINAIS:
 
 10.8- A CONTRATADA possui o direito de uso de imagens pertencentes ao projeto, que poderão ser utilizados para fins publicitários e composição do seu portfólio sem a divulgação do nome do Contratante. (Lei Federal nº 12.378/2010; Lei de Direito Autoral nº 9.610/98, Resolução CAU/BR nº 67 e Resolução CAU/BR nº 75). 
 
-10.9- É vedado ao CONTRATANTE proceder à execução da obra antes da entrega do Projeto Executivo completo, anão ser com expressa aceitação da CONTRATADA, bem como lhe é ilegal executar a obra em desacordo com o referido Projeto.
+10.9- É vedado ao CONTRATANTE proceder à execução da obra antes da entrega do Projeto Executivo completo, a não ser com expressa aceitação da CONTRATADA, bem como lhe é ilegal executar a obra em desacordo com o referido Projeto.
 
 10.10- Fica ausente nesse contrato o serviço de correção de projetos refeitos pelos fornecedores que trabalham com móveis modulados para adequação ao projeto original.
 
@@ -263,7 +304,7 @@ CPF:{cpf_cliente}
 
 TESTEMUNHA: ________________________________________
 Nome: 
-RG: 
+RG/CPF: 
 
 
 
