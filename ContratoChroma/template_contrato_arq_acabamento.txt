@@ -186,11 +186,10 @@ CNPJ:56.049.199/0001-05(Chave pix)
 
 7.1.2-Ao optar por pagamento em cheque, o CONTRATANTE deverá disponibilizá–los pré–datados na assinatura do contrato.
 
-71.3-Ao optar por BOLETOS, esses serão enviados pelo CONTRATADO por e–mail ou WhatsApp, com 10 dias de antecedência do vencimento ao CONTRATANTE.
+7.1.3-Ao optar por BOLETOS, esses serão enviados pelo CONTRATADO por e–mail ou WhatsApp, com 10 dias de antecedência do vencimento ao CONTRATANTE.
 7.2-O atraso em qualquer uma das parcelas gera multa de 2% + correção de 2% ao mês sobre o saldo devido.
 
-7.3- Ocorrendo atraso do pagamento superior a 30 dias, a CONTRATADA poderá efetuar o nome do CONTRATANTE no cadastro de serviços de proteção ao crédito SPC, consoante autorização da legislação vigente, bem como efetuar
-cobrança judicial e extrajudicial da parcela em aberto.
+7.3- Ocorrendo atraso do pagamento superior a 30 dias, a CONTRATADA poderá efetuar o nome do CONTRATANTE no cadastro de serviços de proteção ao crédito SPC, consoante autorização da legislação vigente, pausar a relização do serviço, bem como efetuar cobrança judicial e extrajudicial da parcela em aberto.
 
 8-CLÁUSULA OITAVA
 

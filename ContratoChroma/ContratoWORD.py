@@ -260,7 +260,7 @@ def exibir_contrato(contrato):
 
 
 # Variável global para o caminho da logomarca
-logomarca_path = "ContratoChroma/Logotipo_Chroma.png"
+logomarca_path = "ContratoChroma\Logotipo_Chroma.png"
 
 # # Mostra a Logomarca
 # root = tk.Tk()
@@ -329,7 +329,7 @@ entry_telefone_cliente = tk.Entry(root,bg=cinza)
 entry_telefone_cliente.grid(row=5, column=1)
 entry_telefone_cliente.config(width=50,font=(fonte_var.get(), tamanho_fonte_var.get(), estilo_fonte_var.get()))
 
-tk.LabelFrame(root, text="e-mail do Cliente:",bg=cinza,font=(fonte_var.get(), tamanho_fonte_var.get(), estilo_fonte_var.get())).grid(row=6, column=0)
+tk.Label(root, text="e-mail do Cliente:",bg=cinza,font=(fonte_var.get(), tamanho_fonte_var.get(), estilo_fonte_var.get())).grid(row=6, column=0)
 entry_email_cliente = tk.Entry(root,bg=cinza)
 entry_email_cliente.grid(row=6, column=1)
 entry_email_cliente.config(width=50,font=(fonte_var.get(), tamanho_fonte_var.get(), estilo_fonte_var.get()))
