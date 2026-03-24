@@ -1,0 +1,168 @@
+\documentclass[11pt,a4paper]{article}
+
+% Pacotes essenciais
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[portuguese]{babel}
+\usepackage{geometry}
+\geometry{a4paper, margin=2cm}
+\usepackage[table]{xcolor}
+\usepackage[skins]{tcolorbox}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault} % Fonte sans-serif para visual moderno
+
+% Pacotes para o diagrama TikZ
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows.meta, positioning}
+
+% Definição de Cores (Estilo Moderno / Chroma)
+\definecolor{primary}{RGB}{160, 50, 30}   % Terracota escuro
+\definecolor{secondary}{RGB}{40, 40, 40}  % Cinza escuro (texto)
+\definecolor{lightgray}{RGB}{245, 245, 245}
+\definecolor{accent}{RGB}{220, 220, 220}
+
+% Configuração das caixas tcolorbox
+\tcbset{
+    boxmodern/.style={
+        colback=white,
+        colframe=primary,
+        arc=3mm,
+        boxrule=1pt,
+        left=4mm, right=4mm, top=3mm, bottom=3mm,
+        fonttitle=\bfseries\Large,
+        coltitle=white,
+        attach boxed title to top left={yshift=-2mm, xshift=4mm},
+        boxed title style={colback=primary, rounded corners, size=small}
+    }
+}
+
+\begin{document}
+
+% Cabeçalho
+\begin{center}
+    {\Huge \bfseries \color{primary} RELATÓRIO ORGANIZACIONAL DE PROJETO} \\[0.3cm]
+    {\Large \color{secondary} Chroma Arquitetura - Planejamento Estratégico de Equipe} \\[0.5cm]
+    \rule{\linewidth}{1.5pt}
+\end{center}
+
+\vspace{0.2cm}
+
+% Seção 1: Dados do Projeto
+\begin{tcolorbox}[boxmodern, title=$1.$ Dados do Projeto]
+\renewcommand{\arraystretch}{1.4}
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+\textbf{Contratante:} & Thiago Gleyson de Paula Pereira \\
+\textbf{Contratada:} & Arq. Luana Nonis Santos Bacon (CAU: A133892-7) \\
+\textbf{Objeto:} & Reforma e Arquitetura de Interiores Comercial - Buffet Infantil \\
+\textbf{Área Estimada:} & 650 $m^2$ \\
+\textbf{Prazo Estimado:} & $\approx$ 3 Meses (55 a 65 dias úteis) \\
+\end{tabularx}
+\end{tcolorbox}
+
+\vspace{0.3cm}
+
+% Seção 2: Composição da Equipe
+\begin{tcolorbox}[boxmodern, title=$2.$ Composição da Equipe e Carga Horária]
+A estrutura da equipe foi dimensionada para otimizar o desenvolvimento do projeto dentro do cronograma estipulado, garantindo qualidade técnica e atendimento personalizado ao cliente.
+
+\vspace{0.2cm}
+\renewcommand{\arraystretch}{1.4}
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+\textbf{Arquiteto Principal:} & Gestão do projeto, criação de conceitos, atendimento, conferência normativa, projeto luminotécnico e revisão final técnica. (Carga total) \\
+\textbf{Estagiário 01:} & Modelagem 3D, renderização, desenhos de layout e detalhamentos específicos. (Carga: 4h/dia) \\
+\textbf{Estagiário 02:} & Compatibilização, plantas técnicas (demolir/construir, elétrica/hidráulica), elevações e extração de memorial quantitativo. (Carga: 4h/dia) \\
+\end{tabularx}
+\end{tcolorbox}
+
+\vspace{0.3cm}
+
+% Seção 3: Metas e Cronograma de Execução
+\begin{tcolorbox}[boxmodern, title=$3.$ Cronograma e Atribuição de Metas]
+\renewcommand{\arraystretch}{1.4}
+\rowcolors{1}{lightgray}{white}
+\begin{tabularx}{\textwidth}{@{}p{3.2cm}p{2.5cm}X@{}}
+\toprule
+\textbf{Fase do Projeto} & \textbf{Prazo \newline Previsto} & \textbf{Metas e Entregáveis} \\
+\midrule
+\textbf{Levantamento e Reunião} & \textbf{19/03} a \textbf{20/03/26} \newline (Imediato) & 
+\textbf{Arquiteto:} Definição do programa de necessidades. \newline 
+\textbf{Estagiários:} Medição in loco, fotos e desenho da base. \\
+
+\textbf{Estudo \newline Preliminar} & \textbf{20/04/2026} \newline (20 dias úteis) & 
+\textbf{Arquiteto:} Direção criativa e fluxo de ambientes. \newline 
+\textbf{Estagiários:} Plantas de layout e Maquete 3D. \\
+
+\textbf{Aprovação} & \textbf{30/04/2026} \newline (7 dias/alteração) & 
+\textbf{Arquiteto:} Apresentação do projeto ao cliente. \newline 
+\textbf{Estagiários:} Execução rápida das alterações. \\
+
+\textbf{Projeto \newline Executivo} & \textbf{22/06/2026} \newline (35 dias úteis) & 
+\textbf{Arquiteto:} Projeto luminotécnico, revisão e RRT. \newline 
+\textbf{Estagiários:} Plantas técnicas gerais e Memorial Quantitativo. \\
+\bottomrule
+\end{tabularx}
+\end{tcolorbox}
+
+\vspace{0.3cm}
+
+% Seção 4: Fluxograma com TikZ
+\begin{tcolorbox}[boxmodern, title=4. Fluxograma de Etapas e Prazos]
+\vspace{0.2cm}
+\begin{center}
+\begin{tikzpicture}[
+  node distance=1.2cm and 1.5cm,
+  block/.style={rectangle, draw=primary, fill=lightgray, text width=5cm, text centered, rounded corners, minimum height=1.3cm, font=\sffamily\footnotesize},
+  decision/.style={diamond, aspect=2, draw=primary, fill=accent, text width=2cm, text badly centered, inner sep=1pt, font=\sffamily\footnotesize\bfseries},
+  highlight/.style={rectangle, draw=primary, fill=primary!15, text width=5cm, text centered, rounded corners, minimum height=1.3cm, font=\sffamily\footnotesize\bfseries},
+  arrow/.style={-{Stealth[length=3mm, width=2mm]}, thick, draw=secondary}
+]
+
+% Blocos
+\node [block] (reuniao) {\textbf{1. Reunião Inicial}\\Definição de necessidades.\\Prazo: Assinatura do contrato.};
+
+\node [block, below=of reuniao] (levantamento) {\textbf{2. Levantamento in Loco}\\Medição dos espaços.\\Prazo: Liberação das chaves.};
+
+\node [block, below=of levantamento] (estudo) {\textbf{3. Estudo Preliminar}\\Plantas de layout e 3D.\\Prazo: Até 20 dias úteis.};
+
+% Blocos Lado Direito e Decisão
+\node [block, right=of estudo] (aprovacao) {\textbf{4. Análise do Cliente}\\Apresentação e Alterações\\(Até 3x - 7 dias úteis/cada)};
+
+\node [decision, below=of aprovacao, node distance=1cm] (decisao) {Aprovado?};
+
+% Retorno Lado Esquerdo
+\node [block, left=of decisao] (executivo) {\textbf{5. Projeto Executivo}\\Plantas técnicas para obra.\\Prazo: Até 35 dias úteis.};
+
+\node [highlight, below=of executivo] (entrega) {\textbf{6. Entrega Final do Projeto}\\Total: $\approx$ 55 dias úteis \\(Planejamento de 3 meses)};
+
+\draw [arrow] (aprovacao) -- (decisao);
+
+% Setas de Decisão (Sim / Não)
+\draw [arrow] (decisao) -- node[midway, above, font=\sffamily\scriptsize\bfseries, text=green!50!black] {Sim} (executivo);
+\draw [arrow] (decisao.east) -- +(1.8,0) |- node[pos=0.4, right, font=\sffamily\scriptsize\bfseries, text=red!70!black] {Não (Refazer)} (aprovacao.east);
+
+% Setas
+\draw [arrow] (reuniao) -- (levantamento);
+\draw [arrow] (levantamento) -- (estudo);
+\draw [arrow] (estudo) -- (aprovacao) node[midway, above, font=\sffamily\scriptsize] {Revisão};
+\draw [arrow] (aprovacao) -- (decisao);
+% \draw [arrow] (decisao) |- (executivo) node[pos=0.25, left, font=\sffamily\scriptsize] {Aprovado};
+\draw [arrow] (executivo) -- (entrega);
+
+\end{tikzpicture}
+\end{center}
+\end{tcolorbox}
+
+\vspace{0.2cm}
+
+% Rodapé / Assinatura
+\begin{center}
+    \vspace{0.5cm}
+    \rule{8cm}{0.5pt} \\
+    \vspace{0.2cm}
+    \textbf{Luana Nonis Santos Bacon} \\
+    Arquiteta e Urbanista - CAU A133892-7
+\end{center}
+
+\end{document}
